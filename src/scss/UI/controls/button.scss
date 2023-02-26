@@ -1,0 +1,37 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 1.75rem 2.4rem 1.85rem 6.2rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: #2c852a;
+  border-radius: 4rem;
+
+  @include mq(sm) {
+    padding: 1.75rem 2.4rem 1.85rem 5.2rem;
+    font-size: 1.4rem;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 2.4rem;
+    width: 1.8rem;
+    height: 3.4rem;
+    background-color: transparent;
+    background-image: url('../images/lightning.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0.05rem;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 0 1.4rem rgb(255 255 255 / 65%));
+    content: '';
+
+    @include mq(sm) {
+      width: 1.6rem;
+      height: 3rem;
+    }
+  }
+}
