@@ -1,4 +1,23 @@
 .socials {
+
+  &--dark {
+    .socials__list-link {
+      border: 0.1rem solid rgb(0 0 0 / 20%);
+    }
+
+    .socials__list-link {
+      display: flex;
+    }
+
+    .socials__list-link--tel {
+      display: none;
+    }
+
+    .socials__list-icon {
+      fill: #1d1d1d;
+    }
+  }
+
   &__list {
     display: flex;
   }

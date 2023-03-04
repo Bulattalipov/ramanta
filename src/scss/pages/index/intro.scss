@@ -6,6 +6,10 @@
     height: 100vh;
     padding-top: 8rem;
     background-color: #16181d;
+
+    @include mq(md) {
+      height: 95vh;
+    }
   }
 
   &__img {

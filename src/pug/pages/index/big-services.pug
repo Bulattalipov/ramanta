@@ -1,0 +1,43 @@
+-
+  servicesDrill = [
+    {name: "Бетон"},
+    {name: "Газобетон"},
+    {name: "Облецовка"},
+    {name: "Железобетон"},
+    {name: "Кирпич"},
+    {name: "Металл"},
+    {name: "Арматура"},
+    {name: "ФБС блок"},
+    {name: "ЖБ прекрытие"},
+    {name: "и др."},
+  ]
+
+-
+  servicesWath = [
+    {name: "Вода"},
+    {name: "Канализация"},
+    {name: "Газ"},
+    {name: "Вентиляция"},
+    {name: "и др."},
+  ]
+
+section.big-services
+  .site-container
+    .big-services__wrapper
+      .big-services__img-wrapper
+        +imgLazy("assets/images/big-services/drilling.jpg", "Алмазное сверление")(class="big-services__img")
+      .big-services__inner
+        h2.big-services__title
+          | Алмазное  сверление
+        .big-services__box
+          .big-services__box-title
+            | Где сверлим:
+          .big-services__box-items
+            each item in servicesDrill
+              .big-services__box-item= item.name
+        .big-services__box
+          .big-services__box-title
+            | Для чего:
+          .big-services__box-items
+            each item in servicesWath
+              .big-services__box-item= item.name

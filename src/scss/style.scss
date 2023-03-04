@@ -13,8 +13,14 @@
   --color-grayscale-100: #F2F2F2;
   --font-body: 400 1.6rem/1.2 var(--main-ff);
 
+  /* fonts */
+  --font-common-placeholder: 400 2rem/110% var(--main-ff);
+  --font-common-label-1: 450 2.4rem/100% var(--main-ff);
+  --font-common-label-2: 450 1.9rem/100% var(--main-ff);
+  --font-common-label-3: 450 1.7rem/100% var(--main-ff);
+
   /* etc */
-  --transition: 200ms ease-in --transition: 200ms ease-in;
+  --transition: 200ms ease-in;
   --content-padding: 4rem;
 }
 

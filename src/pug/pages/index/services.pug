@@ -1,3 +1,16 @@
+-
+  listServices = [
+    {urlImg: "assets/images/services/1.jpg", text: "Установка, замена  приборов учёта"},
+    {urlImg: "assets/images/services/2.jpg", text: "Установка, замена трансформаторов тока"},
+    {urlImg: "assets/images/services/3.jpg", text: "Монтаж и сборка электрощитов"},
+    {urlImg: "assets/images/services/4.jpg", text: "Установка GSM модемов ПУ"},
+    {urlImg: "assets/images/services/5.jpg", text: "Перепрограммирование приборов учёта"},
+    {urlImg: "assets/images/services/6.jpg", text: "Электромонтаж складских, торговых и производственных обектов"},
+    {urlImg: "assets/images/services/7.jpg", text: "Монтаж лотков. Подключение кабельных линий, прокладка кабелей"},
+    {urlImg: "assets/images/services/8.jpg", text: "Электромонтажные работы по проекту "},
+    {urlImg: "assets/images/services/9.jpg", text: "Монтаж КТП, БКТП, РТП"}
+  ]
+
 section.services
   .site-container
     .services__wrapper
@@ -6,6 +19,48 @@ section.services
       .services__items
         .services__item
           .services__item-img-wrapper
-            +imgLazy("assets/images/services/1.jpg")(class="services__item-img")
+            +imgLazy("assets/images/services/1.jpg", "Установка, замена  приборов учёта")(class="services__item-img")
           .services__item-text
             | Установка, замена  приборов учёта
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/2.jpg", "Установка, замена трансформаторов тока")(class="services__item-img")
+          .services__item-text
+            | Установка, замена трансформаторов тока
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/3.jpg", "Монтаж и сборка электрощитов")(class="services__item-img")
+          .services__item-text
+            | Монтаж и сборка электрощитов
+        .services__item-empty
+        .services__item-empty
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/4.jpg", "Установка GSM модемов ПУ")(class="services__item-img")
+          .services__item-text
+            | Установка GSM модемов ПУ
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/5.jpg", "Перепрограммирование приборов учёта")(class="services__item-img")
+          .services__item-text
+            | Перепрограммирование приборов учёта
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/6.jpg", "Электромонтаж складских, торговых и производственных обектов")(class="services__item-img")
+          .services__item-text
+            | Электромонтаж складских, торговых и производственных обектов
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/7.jpg", "Монтаж лотков. Подключение кабельных линий, прокладка кабелей")(class="services__item-img")
+          .services__item-text
+            | Монтаж лотков. Подключение кабельных линий, прокладка кабелей
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/8.jpg", "Электромонтажные работы по проекту")(class="services__item-img")
+          .services__item-text
+            | Электромонтажные работы по проекту
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/9.jpg", "Монтаж КТП, БКТП, РТП")(class="services__item-img")
+          .services__item-text
+            | Монтаж КТП, БКТП, РТП

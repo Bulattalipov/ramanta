@@ -1,0 +1,137 @@
+.big-services {
+  &__wrapper {
+    display: flex;
+    gap: 2rem;
+    padding: 2.4rem;
+    background-color: #fff;
+    border-radius: 3.2rem;
+
+    @include mq(lg) {
+      display: block;
+      padding: 1.6rem 1.6rem 3rem 1.6rem;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    flex-basis: 50%;
+    height: 57.2rem;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+
+    @include mq(lg) {
+      flex-basis: 40%;
+      height: 30rem;
+    }
+
+    @include mq(md) {
+      height: 25rem;
+    }
+
+    @include mq(xs) {
+      height: 20rem;
+    }
+
+    @include mq("custom", max, 370) {
+      height: 15rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__inner {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding-top: 3.6rem;
+    padding-left: 6rem;
+
+    @include mq(sm) {
+      padding-top: 4rem;
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include mq(sm) {
+      margin-bottom: 2.3rem;
+      font-size: 3.2rem;
+    }
+
+    &::before {
+      position: absolute;
+      top: 1rem;
+      left: -4rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.1;
+      content: '10';
+
+      @include mq(sm) {
+        top: -2rem;
+        left: 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__box {
+    margin-bottom: 5.2rem;
+
+    @include mq(sm) {
+      margin-bottom: 4rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box-title {
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.2;
+
+    @include mq(sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__box-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 0.8rem;
+
+    @include mq(sm) {
+      gap: 0.8rem 0.4rem;
+    }
+  }
+
+  &__box-item {
+    padding: 1rem 1.6rem;
+    font-size: 1.8rem;
+    background: #f2f2f2;
+    border-radius: 5rem;
+
+    @include mq(sm) {
+      font-size: 1.4rem;
+    }
+  }
+
+}

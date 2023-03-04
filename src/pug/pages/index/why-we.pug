@@ -1,0 +1,19 @@
+-
+  whyWeItems = [
+    {urlImg: "assets/images/why-we/camera-select.svg", altImg: "Фото", text: "Фото по запросу заказчика"},
+    {urlImg: "assets/images/why-we/house-cleaning-star.svg", altImg: "Уборка", text: "Уборка помещения"},
+    {urlImg: "assets/images/why-we/clock-time-checkmark.svg", altImg: "Время", text: "Бережём ваше время"},
+    {urlImg: "assets/images/why-we/equipment-cement-cart.svg", altImg: "Материалы", text: "Можем использовать свои материалы"},
+    {urlImg: "assets/images/why-we/home-care-hands.svg", altImg: "Индивидуальный подход", text: "Индивидуальный подход к каждому клиенту"}
+  ]
+
+section.why-we
+  .site-container
+    .why-we__container
+      h2.why-we__title
+        | Почему вам нужно обратиться именно к нам?
+      .why-we__items
+        each item in whyWeItems
+          .why-we__item
+            img.why-we__item-img(src=item.urlImg alt=item.altImg)
+            .why-we__item-text= item.text

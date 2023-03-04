@@ -87,6 +87,7 @@
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"dependencies": {
+		"inputmask": "5.0.7",
 		"reset-css": "^5.0.1",
 		"vanilla-lazyload": "^17.6.1"
 	}
