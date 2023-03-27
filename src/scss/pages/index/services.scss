@@ -12,6 +12,10 @@
     line-height: 1.2;
     text-transform: uppercase;
 
+    .line {
+      overflow: hidden;
+    }
+
     @include mq(sm) {
       margin-bottom: 3rem;
       font-size: 3.2rem;

@@ -50,32 +50,34 @@
         width: 36rem;
       }
     }
+  }
 
-    &::after {
-      position: absolute;
-      bottom: 10.7rem;
-      left: 66rem;
-      width: 28.1rem;
-      height: 46.5rem;
-      background-image: url("../images/why-we/lightning.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: '';
+  &__icon-svg {
+    position: absolute;
+    bottom: 10.7rem;
+    left: 66rem;
+    width: 28.1rem;
+    height: 42rem;
+    background-size: contain;
+    content: '';
 
-      @include mq(lg) {
-        bottom: 6.7rem;
-        left: 22rem;
-        width: 16.1rem;
-        height: 28.5rem;
-      }
-
-      @include mq("custom", max, 1060) {
-        right: 4rem;
-        bottom: -7rem;
-        left: auto;
-        width: 12rem;
-      }
+    @include mq(lg) {
+      bottom: 6.7rem;
+      left: 22rem;
+      width: 16.1rem;
+      height: 24rem;
     }
+
+    @include mq("custom", max, 1060) {
+      right: 4rem;
+      bottom: -2rem;
+      left: auto;
+      width: 11rem;
+    }
+  }
+
+  &__icon-svg-path {
+    filter: drop-shadow(0 0 1.4rem rgb(255 255 255 / 65%));
   }
 
   &__title {

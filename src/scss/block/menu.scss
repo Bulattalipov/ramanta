@@ -3,13 +3,12 @@
   z-index: 4;
   width: 100%;
   height: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: #6f6d6c;
-  transition: height 400ms overflow 400ms;
+  transition: height 100ms;
 
   &.active {
-    height: 100vh;
-    overflow: visible;
+    height: 100%;
   }
 
   .site-container {
@@ -18,7 +17,8 @@
 
   &__wrapper {
     height: 100%;
-    padding-top: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   &__top {
@@ -30,16 +30,12 @@
   &__burger {
     position: relative;
     z-index: 5;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 3.2rem;
     height: 1.6rem;
     cursor: pointer;
-
-    @include mq(lg) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
   }
 
   &__burger-line {
@@ -48,6 +44,14 @@
     height: 0.15rem;
     background-color: #fff;
     border-radius: 1rem;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: rotate(135deg);
+    }
   }
 
   .nav {
@@ -57,6 +61,7 @@
   .nav__list {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 2rem;
   }
 
   .nav__list-item {
@@ -68,15 +73,18 @@
     padding: 2rem 0;
   }
 
-  .socials {
-    margin-top: 4rem;
+  &__footer {
+    &.socials {
+      margin-top: 4rem;
+    }
+
+    .socials__list-link {
+      display: flex;
+    }
+
+    .socials__list-link--tel {
+      display: none;
+    }
   }
 
-  .socials__list-link {
-    display: flex;
-  }
-
-  .socials__list-link--tel {
-    display: none;
-  }
 }
